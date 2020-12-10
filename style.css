@@ -1,7 +1,92 @@
 body {
   margin: 0 auto;
 }
+@font-face {
+  font-family: 'nasa';
+  src: url("fonts/nasa.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
 
-.main-container {
-  
+.mainContainer {
+  margin: 0 auto;
+  padding: 0vh;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.topContainer {  
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(15, 14, 14, 0.45), 
+      rgba(15, 14, 14, 0.45)
+    ),
+    url(topContainerBackground.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 2px 2px #000000;
+}
+#nasaHeading {
+  color: rgb(236, 236, 236);
+  font-family: 'nasa';
+  font-size: 15vw;
+  transition: all 4s ease-in-out;
+}
+
+#nasaHeading:hover {
+  transform: scale(.0);
+  cursor: crosshair;
+}
+
+.bottomContainer {
+  margin-top: 2vh;
+  padding: 10px 15vh 5px 15vh;
+  background-color: rgb(226, 226, 226);
+  height: 36vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bottomContainer div {
+  width: 30vh;
+}
+
+
+.social a, .office a {
+  display: inline-block;
+  color: #000000;
+  font-weight: bolder;
+  text-decoration: none;
+
+}
+
+.social img {
+  height: 30px;
+  margin-right: 12px;
+  vertical-align: middle;
+  padding: 6px;
+}
+
+.social a:hover, .office a:hover {
+  transform: scale(1.05);
+}
+
+textarea, input {
+  border: none;
+  font-family: 'nasa';
+}
+
+button {
+  margin-top: 5px;
+  width: 60px;
+  height: 30px;
+  background-color: rgb(58, 58, 58);
+  border: none;
+  color: white;
 }
