@@ -37,11 +37,6 @@ body {
   font-size: 10vw;
 }
 
-#nasaHeading:hover {
-  transform: scale(.0);
-  cursor: crosshair;
-}
-
 .topContainer img {
   height: 10vh;
   bottom: 5vh;
