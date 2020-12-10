@@ -23,7 +23,7 @@ body {
       rgba(15, 14, 14, 0.45)
     ),
     url(topContainerBackground.jpg);
-  height: 60vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   display: flex;
@@ -34,7 +34,7 @@ body {
 #nasaHeading {
   color: rgb(236, 236, 236);
   font-family: 'nasa';
-  font-size: 15vw;
+  font-size: 10vw;
   transition: all 4s ease-in-out;
 }
 
