@@ -36,6 +36,9 @@ body {
   font-family: 'nasa';
   font-size: 10vw;
 }
+span {
+  font-size:30px;
+}
 
 .topContainer img {
   height: 10vh;
