@@ -35,13 +35,45 @@ body {
   color: rgb(236, 236, 236);
   font-family: 'nasa';
   font-size: 10vw;
-  transition: all 4s ease-in-out;
 }
 
 #nasaHeading:hover {
   transform: scale(.0);
   cursor: crosshair;
 }
+
+.topContainer img {
+  height: 10vh;
+  bottom: 5vh;
+  position: absolute;
+}
+  @keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+  .animateFlicker {
+     -webkit-animation: flickerAnimation 2s infinite;
+     -moz-animation: flickerAnimation 2s infinite;
+     -o-animation: flickerAnimation 2s infinite;
+      animation: flickerAnimation 2s infinite;
+}
+  
 
 .bottomContainer {
   margin-top: 2vh;
